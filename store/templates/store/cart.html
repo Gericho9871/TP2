@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block staticfiles %}
+{% endblock %}
+
+{% block content %}
+{% for product in products%}
+        <div class="product_cart">
+            <div class="product_image">
+                <img src="{{product.product.thumbnail.url}}" alt="product.product.nom" height="250" width="250">
+            </div>
+            <div class="product_description">
+                <h2>{{product.product.nom}}</h2>
+                <h2>{{product.quantity}}</h2>
+                <h2>{{product.product.prix_unit}}</h2>
+                <p>{{product.product.description}}</p>
+            </div>
+            <a href="{% url 'delete_cart' %}">Supprimer</a>
+        </div>
+{% empty %}
+    <p>Le panier est vide </p>
+
+{% endfor %}
+<a href="{% url 'order' %}">Commander</a>
+<a href="{% url 'delete_cart' %}">Tout supprimer</a>
+{% endblock %}

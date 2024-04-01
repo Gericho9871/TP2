@@ -1,0 +1,378 @@
+p{
+  font-family: "Roboto", sans-serif;
+}
+
+*{
+  list-style: none;
+  text-decoration: none;
+  
+}
+a{
+  color: #1F1F1F;
+}
+
+.first-header{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: calc(21px*1.4px);
+}
+
+.first-header h1{
+  font-size: 40px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.icon-container{
+  margin-left: 21px;
+}
+.header_link{
+  margin-right: 34px;
+}
+
+.header_link ul, .social-network-container ul{
+  display: flex;
+}
+
+.banner-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ban-description{
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ban-description h1{
+  font-size: 150px;
+}
+
+.banner-content{
+  width: 100%;
+  height: 610px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+.img-container img{
+  aspect-ratio: 1/1;
+  width: 420px;
+  height: 610px;
+  object-fit: cover;
+}
+
+.new-product-container{
+  padding: 23px;
+  height: 610px;
+}
+
+.new-product-content{
+  display: flex;
+  justify-content: space-evenly;
+  height: 450px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+.new-product-content img{
+  width: 610px;
+  height: 550px;
+  object-fit: cover;
+}
+
+.new-product-description{
+  width: 530px;
+  height: 550px;
+  margin-left: 34px;
+  text-align: center;
+}
+
+.new-product-description img{
+  width: 530px;
+  height: 470px;
+  margin-bottom: 21px;
+  object-fit: cover;
+}
+
+.col-cat-container{
+  
+  padding: 34px;
+  background-color: #f8f2ed;
+}
+
+.col-cat-title h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.8em;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+
+
+
+.col-cat-content{
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col-cat-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  background-position: center;
+  background-size: cover;
+  height: 477px;
+  max-width: 100%;
+  width: 477px;
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #F5F5F7;
+  font-size: 1.8em;
+  line-height: 24px;
+}
+
+.col-cat-img h3{
+  padding: 0 0 8px 34px;
+  font-weight: 400;
+}
+
+.col-cat-img h1{
+  padding: 0 0 34px 34px;
+  font-size: 45px;
+}
+
+.col-cat-img:nth-child(1){
+  background-image: linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.08)),url('../img/BAN/LOOK-3-Secondary-Classic-Butterfly_RGR862__BF28SPDG_06_141_SRGB_4_5.jpg');
+  margin: 0 55px 34px 0;
+  width: 547px;
+  height: 547px;
+}
+
+.col-cat-img:nth-child(2){
+  background-image: linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.08)),url('../img/BAN/LOOK-1-Secondary-Pave-Butterfly_RGN764_RGR300_05_152_SRGB.jpg');
+  margin: 89px 0 34px 0;
+}
+
+.col-cat-img:nth-child(3){
+  background-image: linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.08)),url('../img/BAN/White_diamonds_drop_down_1.jpg');
+  margin: 0 21px 0 34px;
+  transform: translateY(-21px);
+}
+
+.col-cat-img:nth-child(4){
+  background-image: linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.08)),url('../img/BAN/Engagement_Rings_option_2.jpg');
+  margin: 0 55px 0 34px;
+  width: 547px;
+  height: 547px;
+  transform: translateX(-13px);
+  
+}
+
+
+.col-cat-img:nth-child(5){
+  background-image: linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.08)),url('../img/BAN/ztXOBegk.jpeg');
+  margin: 34px 55px 89px 34px;
+  transform: translateX(-89px);
+}
+
+.service-container{
+  padding: 34px;
+  margin-top: 55px;
+}
+
+.service-container h1, .newsletter-container h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.8em;
+  line-height: 24px;
+  margin-bottom: 13px;
+  text-align: center;
+}
+
+.service-content{
+  margin-top: 55px;
+  text-align: center;
+  display: flex;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 13px ;
+}
+
+.content h3{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  padding: 13px 0 8px 0;
+}
+
+.content span{
+  font-size: 2.1em;
+}
+
+.btn-style_3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.btn-style_3 span{
+  font-size: 16px;
+  padding-top: 2px;
+}
+
+.btn-style_3 a{
+  color: #1F1F1F;
+}
+
+.newsletter-container{
+  margin-top: 144px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newsletter-container p{
+  width: 610px;
+  text-align: center;
+  text-wrap: wrap;
+  margin: auto;
+  margin-top: 21px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 144px;
+  margin-top: 21px;
+}
+
+.input-container{
+  display: flex;
+}
+
+.input-content{
+  position: relative;
+  height: 34px;
+  width: 300px;
+  border-bottom: 1px solid #828282;
+}
+
+.input-content input[type="text"]{
+  width: 285px;
+  height: 34px;
+  font-size: 16px;
+  padding: 13px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.input-container input[type="submit"]{
+  font-size: 16px;
+  margin-left: 8px;
+  width: 144px;
+  border: 1px solid #1F1F1F;
+  background: transparent;
+}
+
+.input-container label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 13px 0;
+  font-size: 16px;
+  color: #1F1F1F;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.form-container .input-content input:focus ~ label,
+.form-container .input-content input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+
+footer{
+  margin-top: 89px !important;
+  
+  background-color: #f8f2ed;
+}
+
+.f-header{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 55px;
+}
+.langue{
+  display: flex;
+}
+.langue svg{
+  margin-left: 5px;
+  height: 21px;
+  width: 21px;
+}
+
+.social-network-container{
+  width: 100px;
+}
+
+.social-network-container ul{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.f-footer{
+  height: 144px;
+  margin-top: 89px;
+}
+
+.f-section-container h3{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 21px;
+}
+
+.f-section-container ul li{
+  padding-bottom: 8px;
+}
+
+.f-footer h1{
+  font-size: 144px;
+  text-align: center;
+}

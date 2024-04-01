@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+
+{% block staticfiles %}
+{% endblock %}
+
+
+{% block categorie %}
+    {% for cat in categorie %}
+    <li><a href="{% url 'category' cat.slug%}"> {{cat.nom}}</a></li>
+    {% endfor%}
+{% endblock %}
+
+{% block content %}
+<section>
+      <!--la section de nouveaux produit-->
+      <div class="new-product-container">
+        <div class="new-product-content">
+          <img src="/static/img/BAN/tennis-necklaces-2.jpg" alt="categorie colier" >
+          <div class="new-product-description">
+            <img src="/static/img/BAN/Img_2_ee3d1d53-639b-43b8-9ead-941bcf497d74.jpg" alt="">
+            <h3>Titre categorie</h3>
+            <p>Déscription ou sous titre de la categorie, min une ligne</p>
+            <div class="btn-style_2">
+              <a href="#">Découvrir la Collection</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--la section des collections et categories-->
+      <div class="col-cat-container">
+        <div class="col-cat-title">
+          <h1>Nos collections</h1>
+          <p>Découvrez nos collections uniques. Explorez, inspirez-vous, trouvez votre style.</p>
+        </div>
+        <div class="col-cat-content">
+          <div class="col-cat-img">
+            <h3>Collection</h3>
+            <h1>Nouveautés Printemps</h1>
+          </div>
+          <div class="col-cat-img">
+            <h3>Collection</h3>
+            <h1>Essentiels Élégants</h1>
+          </div>
+          <div class="col-cat-img">
+            <h3>Collection</h3>
+            <h1>Voyage & Aventure</h1>
+          </div>
+          <div class="col-cat-img">
+            <h3>Collection</h3>
+            <h1>Style Urbain</h1>
+          </div>
+          <div class="col-cat-img">
+            <h3>Collection</h3>
+            <h1>Luxe Classique</h1>
+          </div>
+        </div>
+      </div>
+      <div class="service-container">
+        <h1>Nos services</h1>
+        <div class="service-content">
+          <div class="content">
+            <span class="material-symbols-outlined">
+              box
+              </span>
+            <h3>Livraison</h3>
+            <p>Cette partie de la page sera reservé à la description du modèle courant : on a un titre correspondant au modèle</p>
+            <div class="btn-style_3">
+              <a href="#">En savoir plus</a>
+              <span class="material-symbols-outlined">
+arrow_forward_ios
+</span>
+            </div>
+          </div>
+          <div class="content">
+            <span class="material-symbols-outlined">
+              call
+              </span>
+            <h3>Prendre rendez-vous</h3>
+            <p>Cette partie de la page sera reservé à la description du modèle courant : on a un titre correspondant au modèle</p>
+            <div class="btn-style_3">
+              <a href="#">En savoir plus</a>
+              <span class="material-symbols-outlined">
+arrow_forward_ios
+</span>
+            </div>
+          </div>
+          <div class="content">
+            <span class="material-symbols-outlined">
+              featured_seasonal_and_gifts
+              </span>
+            <h3>Offre & Cadeau</h3>
+            <p>Cette partie de la page sera reservé à la description du modèle courant : on a un titre correspondant au modèle</p>
+            <div class="btn-style_3">
+              <a href="#">En savoir plus</a>
+              <span class="material-symbols-outlined">
+arrow_forward_ios
+</span>
+            </div>
+          </div>
+          <div class="content">
+            <span class="material-symbols-outlined">
+              diamond
+              </span>
+            <h3>Personnalisation</h3>
+            <p>Cette partie de la page sera reservé à la description du modèle courant : on a un titre correspondant au modèle</p>
+            <div class="btn-style_3">
+              <a href="#">En savoir plus</a>
+              <span class="material-symbols-outlined">
+arrow_forward_ios
+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newsletter-container">
+        <h1>Joignez-vous à Notre Univers</h1>
+        <p>Ne manquez aucune nouvelle, aucune offre spéciale. Abonnez-vous à notre newsletter pour rester informé des dernières tendances, des promotions exclusives et bien plus encore. Laissez-nous vous guider dans votre voyage à travers le monde de la haute joaillerie.</p>
+        <div class="form-container">
+          <form action="" method="post">
+            <div class="input-container">
+              <div class="input-content">
+                <label for="em">Adresse email</label>
+                <input type="text" name="" id="">
+              </div>
+              <input type="submit" value="S'Abonner">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+{% endblock %}

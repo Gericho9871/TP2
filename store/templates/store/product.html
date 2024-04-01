@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block staticfiles %}
+{% endblock %}
+
+{% block categorie %}
+    {% for cat in categories %}
+    <li><a href="{% url 'category' cat.slug%}"> {{cat.nom}}</a></li>
+    {% endfor%}
+{% endblock %}
+
+{% block content %}
+    <div class="product_cart">
+        <div class="product_image">
+            <img src="{{Product.thumbnail.url}}" alt="Product.nom" height="250" width="250">
+        </div>
+        <div class="product_description">
+            <h2>{{Product.nom}}</h2>
+            <h2>{{Product.prix_unit}}</h2>
+            <p>{{Product.description}}</p>
+        </div>
+        <a href="{% url 'add-to-cart' Product.slug %}">Ajouter au panier</a>
+        <a href="{% url 'add-to-cart' Product.slug %}">Acheter</a>
+    </div>
+{% endblock %}
